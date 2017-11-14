@@ -1,0 +1,50 @@
+tap "caskroom/cask"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/dupes"
+brew "autoconf"
+brew "automake"
+brew "binutils"
+brew "pcre"
+brew "cmake"
+brew "coreutils"
+brew "diffutils"
+brew "ed", args: ["with-default-names"]
+brew "ffmpeg", args: ["with-fdk-aac", "with-freetype", "with-libass", "with-libvorbis", "with-libvpx", "with-opus", "with-sdl2", "with-x265"]
+brew "findutils", args: ["with-default-names"]
+brew "gawk"
+brew "gdbm"
+brew "gnu-indent", args: ["with-default-names"]
+brew "gnu-sed", args: ["with-default-names"]
+brew "gnu-tar", args: ["with-default-names"]
+brew "gnu-which", args: ["with-default-names"]
+brew "gnutls"
+brew "libgcrypt"
+brew "gnupg"
+brew "go"
+brew "openssl"
+brew "pkg-config"
+brew "grep", args: ["with-default-names"]
+brew "gzip"
+brew "htop"
+brew "imagemagick"
+brew "irssi"
+brew "ldns"
+brew "libotr"
+brew "make", args: ["with-default-names"]
+brew "youtube-dl"
+brew "mpv"
+brew "ncdu"
+brew "node"
+brew "osxutils"
+brew "p7zip"
+brew "rcs"
+brew "screen"
+brew "speedtest-cli"
+brew "tmux"
+brew "tree"
+brew "unbound"
+brew "unrar"
+brew "watch"
+brew "wdiff", args: ["with-gettext"]
+brew "wget"

@@ -1,0 +1,17 @@
+term screen-256color
+terminfo rxvt-unicode 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+termcapinfo xterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;\007'
+
+hardstatus off
+hardstatus alwayslastline
+hardstatus string "%{+b wk} %-w%{+b wB} %n %t %{-}%+w %-= %= %c:%s @ %D, %d/%m/%Y%{g} "
+
+startup_message off
+altscreen on
+
+defscrollback 30000
+defhstatus "screen ^E (^Et) | $USER@^EH"
+bind-key C-a last-window
+
+screen -t "zsh" zsh
+screen -t "py" python3
