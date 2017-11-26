@@ -25,6 +25,8 @@ call vundle#end()
 filetype plugin indent on
 " }}}
 " {{{ Plugin options
+set tags=tags;/
+
 let g:Powerline_symbols = 'fancy'
 let g:NERDSpaceDelims = 1
 let g:SimpylFold_docstring_preview=1
@@ -80,7 +82,7 @@ set cursorline cursorcolumn
 au BufRead,BufNewFile *.py set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent filetype=python fileformat=unix
 au BufRead,BufNewFile *.pl set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent filetype=perl fileformat=unix
 au BufRead,BufNewFile *.sh set tabstop=2 softtabstop=2 shiftwidth=2 textwidth=79 expandtab autoindent filetype=sh fileformat=unix
-au BufRead,BufNewFile *.cpp,*.c,*.h set tabstop=2 softtabstop=2 shiftwidth=2 textwidth=79 expandtab autoindent fileformat=unix
+au BufRead,BufNewFile *.cpp,*.c,*.h set tabstop=2 softtabstop=2 shiftwidth=2 textwidth=79 expandtab autoindent fileformat=unix fileencoding=utf-8
 au BufRead,BufNewFile *.rst,*.yml set tabstop=2 softtabstop=2 shiftwidth=2 textwidth=79 expandtab autoindent fileformat=unix
 
 au WinLeave * set nocursorline nocursorcolumn
