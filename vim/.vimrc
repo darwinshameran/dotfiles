@@ -123,7 +123,7 @@ func! DeleteTrailingWS()
   exe "normal `z"
 endfunc
 autocmd BufWrite *.py,*.pl :call DeleteTrailingWS()
-"}}}
+" }}}
 " {{{ Mappings
 " Put modeline
 nnoremap <silent> <leader>ml :call AppendModeline()<CR>
@@ -135,4 +135,13 @@ nmap <silent> <leader>e :e $MYVIMRC<CR>
 
 " Insert datetime
 nnoremap <silent> <leader>dt "=strftime("%F %T (%Z)")<CR>P
+" }}}
+"
+" {{{ templates
+augroup templates
+  au!
+  autocmd BufNewFile *.sql silent! execute '0r $HOME/.vim/templates/skeleton.'.expand("<afile>:e")
+  autocmd BufNewFile * %substitute#\[:VIM_EVAL:\]\(.\{-\}\)\[:END_EVAL:\]#\=eval(submatch(1))#ge
+augroup END
+
 " }}}
