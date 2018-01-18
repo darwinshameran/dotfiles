@@ -84,7 +84,7 @@ au BufRead,BufNewFile *.pl set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79
 au BufRead,BufNewFile *.sh set tabstop=2 softtabstop=2 shiftwidth=2 textwidth=79 expandtab autoindent filetype=sh fileformat=unix
 au BufRead,BufNewFile *.cpp,*.c,*.h set tabstop=2 softtabstop=2 shiftwidth=2 textwidth=79 expandtab autoindent fileformat=unix fileencoding=utf-8
 au BufRead,BufNewFile *.rst,*.yml set tabstop=2 softtabstop=2 shiftwidth=2 textwidth=79 expandtab autoindent fileformat=unix
-au BufRead,BufNewFile *sql set tabstop=8 softtabstop=8 backspace=2 shiftwidth=2 textwidth=79 expandtab autoindent fileformat=unix
+au BufRead,BufNewFile *.sql set tabstop=8 softtabstop=8 backspace=2 shiftwidth=2 textwidth=79 expandtab autoindent fileformat=unix
 
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
