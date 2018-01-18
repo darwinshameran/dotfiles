@@ -1,0 +1,7 @@
+-- 
+-- [:VIM_EVAL:]expand('%:t')[:END_EVAL:]
+-- 
+-- Author:              
+-- Description:         
+-- Date:                [:VIM_EVAL:]strftime('%F %T (%Z)')[:END_EVAL:]
+--
