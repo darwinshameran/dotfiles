@@ -1,4 +1,4 @@
-autoload -U compinit && compinit
+autoload -U compinit -iu && compinit -iu
 zstyle ":completion:*" matcher-list "m:{a-z}={A-Z}"
 zstyle ":completion:*" select-prompt %SScrolling active: current selection at %p%s
 
